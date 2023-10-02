@@ -12,22 +12,32 @@ function App() {
             <div className='signin'>
                 <label for='name'>이름</label>
                 <input type='text' name='name' id='name' autoComplete='off'></input>
+                <div class ='success-name hide sfont'>멋진 이름이네요!</div>
+                <div class = 'failure-name hide ffont'>필수 입력 항목입니다!</div>
             </div>
             <div className='signin'>
-                <label for='name'>닉네임</label>
-                <input type='text' name='nickname' id='nickname' autoComplete='off'></input>
+                <label for='nickname'>닉네임</label>
+                <input type='text' name='' id='nickname' autoComplete='off'></input>
+                <div class ='success-nickname hide sfont'>멋진 닉네임이군요!</div>
+                <div class = 'failure-nickname hide ffont'>닉네임은 2~5글자로 구성해주세요!</div>
             </div>
             <div className='signin'>
-                <label for='name'>이메일</label>
+                <label for='emailadd'>이메일</label>
                 <input type='text' name='emailadd' id='emailadd' autoComplete='off'></input>
+                <div class ='success-emailadd hide sfont'>올바른 메일 형식입니다!</div>
+                <div class = 'failure-emailadd hide ffont'>올바른 메일 형식이 아닙니다!</div>
             </div>
             <div className='signin'>
-                <label for='name'>비밀번호</label>
+                <label for='password'>비밀번호</label>
                 <input type='text' name='password' id='password' autoComplete='off'></input>
+                <div class ='success-password hide sfont'>안전한 비밀번호입니다!</div>
+                <div class = 'failure-password hide ffont'>영어 + 숫자 + 특수문자를 조합하여 작성해주세요.</div>
             </div>
             <div className='signin'>
-                <label for='name'>비밀번호 확인</label>
+                <label for='checkpsw'>비밀번호 확인</label>
                 <input type='text' name='checkpsw' id='checkpsw' autoComplete='off'></input>
+                <div class ='success-checkpsw hide sfont'>비밀번호가 일치합니다</div>
+                <div class = 'failure-checkpsw hide ffont'>비밀번호가 일치하지 않습니다.</div>
             </div>
             <div class="btn">
               <button type='submit'>가입하기</button>
@@ -35,6 +45,16 @@ function App() {
           </form>
           </div>
       </section>
+          
+
+
+
+      <script>
+        
+
+
+
+      </script>
     </div>
   );
 }
