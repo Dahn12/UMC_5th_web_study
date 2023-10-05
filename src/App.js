@@ -1,5 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
+import './modal.js';
+
+
 
 function App() {
   return (
@@ -40,21 +42,24 @@ function App() {
                 <div class = 'failure-checkpsw hide ffont'>비밀번호가 일치하지 않습니다.</div>
             </div>
             <div class="btn">
-              <button type='submit'>가입하기</button>
+              <button type='submit' class="submit-btn">가입하기</button>
             </div>
           </form>
+
+          <div class='modal-box'>
+            <div class="modal">
+              <div class="modal-title">가입 성공!</div>
+              <p>umc 챌린저 가입을 축하합니다!!</p>
+              <div class="modal-close">
+                <button>닫기</button>
+              </div>
+            </div>
+          </div>
+
+
+
           </div>
       </section>
-          
-
-
-
-      <script>
-        
-
-
-
-      </script>
     </div>
   );
 }
